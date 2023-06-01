@@ -35,6 +35,27 @@ In this example we have a monolithic application that manages loan of books with
   
   User controller after replacing user service by user facade
   ![CHEESE!](assets/replace_user_service.PNG)
+  
+   2. **Migrating functionalities related to th books**:we will develop microservice that will manage the books but before we create it we should show the book controller in monolithic architecture 
+  ![CHEESE!](assets/book_controller.PNG)
+  
+  books microservice: 
+  
+  ![CHEESE!](assets/books_microservice.PNG)
+  
+  now we should replace the book service in book controller with a facade that will communicate with the books microservice :
+  
+  ![CHEESE!](assets/book_facade.PNG)
+  
+  ![CHEESE!](assets/remove_book_service.PNG)
+  
+  book facade interface 
+  
+  ![CHEESE!](assets/book_facade_interface.PNG)
+  
+  
+  User controller after replacing book service by user facade
+  ![CHEESE!](assets/replace_book_service.PNG)
  
  
  
