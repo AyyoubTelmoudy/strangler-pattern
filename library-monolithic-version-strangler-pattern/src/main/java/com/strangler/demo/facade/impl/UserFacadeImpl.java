@@ -16,9 +16,7 @@ public class UserFacadeImpl implements UserFacade {
     private final  RestTemplate restClient;
 
     @Override
-    public List<User> getAllUsers() {
-        return null;
-    }
+    public List<User> getAllUsers() {return null;}
 
     @Override
     public User getUserById(Long id) {
