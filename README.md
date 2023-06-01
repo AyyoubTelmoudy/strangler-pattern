@@ -33,7 +33,7 @@ In this example we have a monolithic application that manages loan of books with
   ![CHEESE!](assets/user_facade_interface.PNG)
   
   
-  User controller after replacing user service by use facade
+  User controller after replacing user service by user facade
   ![CHEESE!](assets/replace_user_service.PNG)
  
  
