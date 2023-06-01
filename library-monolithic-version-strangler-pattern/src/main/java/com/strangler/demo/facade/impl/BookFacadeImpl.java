@@ -1,8 +1,7 @@
 package com.strangler.demo.facade.impl;
 
-import com.strangler.demo.entity.Book;
 import com.strangler.demo.facade.BookFacade;
-import com.strangler.demo.model.User;
+import com.strangler.demo.model.Book;
 
 import java.util.List;
 

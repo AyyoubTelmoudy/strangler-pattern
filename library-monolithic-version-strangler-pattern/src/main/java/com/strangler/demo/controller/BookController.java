@@ -1,9 +1,7 @@
 package com.strangler.demo.controller;
 
-import com.strangler.demo.entity.Book;
 import com.strangler.demo.facade.BookFacade;
-import com.strangler.demo.service.BookService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.strangler.demo.model.Book;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
