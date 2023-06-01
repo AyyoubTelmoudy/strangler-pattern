@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/library-monolithic-version/library-monolithic-version.iml" filepath="$PROJECT_DIR$/library-monolithic-version/library-monolithic-version.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-monolithic-version-strangler-pattern/library-monolithic-version (1).iml" filepath="$PROJECT_DIR$/library-monolithic-version-strangler-pattern/library-monolithic-version (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/strangler-pattern.iml" filepath="$PROJECT_DIR$/.idea/strangler-pattern.iml" />
+    </modules>
+  </component>
+</project>

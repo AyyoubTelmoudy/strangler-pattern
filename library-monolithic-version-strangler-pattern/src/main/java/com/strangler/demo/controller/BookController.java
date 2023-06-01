@@ -1,8 +1,7 @@
 package com.strangler.demo.controller;
 
-import com.strangler.demo.entity.Book;
-import com.strangler.demo.service.BookService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.strangler.demo.facade.BookFacade;
+import com.strangler.demo.model.Book;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,26 +10,29 @@ import java.util.List;
 @RequestMapping("/books")
 public class BookController {
 
-    @Autowired
-    private BookService bookService;
+    private final BookFacade bookFacade;
+
+    public BookController(BookFacade bookFacade) {
+        this.bookFacade = bookFacade;
+    }
 
     @GetMapping
     public List<Book> getAllBooks() {
-        return bookService.getAllBooks();
+        return bookFacade.getAllBooks();
     }
 
     @GetMapping("/{id}")
     public Book getBook(@PathVariable Long id) {
-        return bookService.getBookById(id);
+        return bookFacade.getBookById(id);
     }
 
     @PostMapping
     public Book createBook(@RequestBody Book book) {
-        return bookService.createBook(book);
+        return bookFacade.createBook(book);
     }
 
     @DeleteMapping("/{id}")
     public void deleteBook(@PathVariable Long id) {
-        bookService.deleteBook(id);
+        bookFacade.deleteBook(id);
     }
 }
