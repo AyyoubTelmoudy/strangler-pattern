@@ -28,6 +28,9 @@ In this example we have a monolithic application that manages loan of books with
   
   ![CHEESE!](assets/remove_user_service.PNG)
   
+  User facade interface 
+  ![CHEESE!](assets/user_facade_interface)
+  
   User controller after replacing user service by use facade
   ![CHEESE!](assets/replace_user_service.PNG)
  
