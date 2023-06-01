@@ -19,11 +19,13 @@ In this example we have a monolithic application that manages loan of books with
   ![CHEESE!](assets/user_controller.PNG)
   
   users microservice: 
+  
   ![CHEESE!](assets/users_microservice.PNG)
   
   now we should replace the user service in user controller with a facade that will communicate with the users microservice :
   
   ![CHEESE!](assets/user_facade.PNG)
+  
   ![CHEESE!](assets/remove_user_service.PNG)
   
   User controller after replacing user service by use facade
